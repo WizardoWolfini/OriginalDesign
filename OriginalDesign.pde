@@ -30,7 +30,7 @@ direction = true;
 }
 if(colordirection){
 index = index + 1;
-if(index >= 12){
+if(index >= 24){
 colordirection = false;
 }
 } else{
@@ -50,9 +50,9 @@ void draw(){
   }
 }
 class mrectangle{
-  int[] colorarrayr = {0,255,255,255,255,255,127,0  ,0   ,0  ,37 ,75,112,148};
-  int[] colorarrayg = {0,0  ,64 ,127,191,255,255,255,127 ,0  ,0  ,0 ,0,0};
-  int[] colorarrayb = {0,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1267,255,190,130,170,211};
+  int[] colorarrayr = {0,255,255,255,255,255,255,255,255,255,255,127,127,0,0  ,0,0   ,0,0  ,37,37 ,75,75,112,112,148,148};
+  int[] colorarrayg = {0,0,0  ,64,64 ,127,127,191,191,255,255,255,255,255,255,127,127 ,0,0  ,0,0  ,0,0 ,0,0,0,0};
+  int[] colorarrayb = {0,0,0  ,0,0  ,0,0  ,0,0  ,0,0  ,0,0  ,0,0  ,127,127,255,255,190,190,130,130,170,170,211,211};
   int index;
   boolean colortype;
   int offset;
@@ -89,7 +89,7 @@ void display(){
   if(colorchange > 3){
   if(colortype){
   index = index + 1;
-  if(index >= 12){
+  if(index >= 24){
   colortype = false;
   }
   }else{
